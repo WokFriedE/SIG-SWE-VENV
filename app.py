@@ -9,6 +9,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 
 @app.route('/')
+
 def hello():
 
     artists = ["1Cd373x8qzC7SNUg5IToqp", "6s22t5Y3prQHyaHWUN1R1C"]
