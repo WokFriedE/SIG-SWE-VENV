@@ -1,5 +1,5 @@
 import os
-import requests
+import requests  # allows for http requests to be made
 from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())  # Loads .env file
@@ -16,7 +16,7 @@ def get_auth():
         'client_secret': CLIENT_SECRET,
     })
 
-    print(auth_response)  # 200 response is good
+    print(auth_response)  # 200 response is good, 400 something broke
 
     auth_response_data = auth_response.json()
     print(auth_response_data)
