@@ -1,0 +1,52 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    border-radius: 3px;
+    margin-inline: 27%;
+    padding: 1%;
+
+    margin-top: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+}
+
+h2 {
+    margin: 0%;
+}
+
+.container a,
+.container a:visited {
+    text-decoration: none;
+    color: rgb(49, 55, 136);
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: raiseUp 200ms ease-out;
+    animation-duration: reverse;
+}
+
+.container a:hover {
+    color: rgb(111, 178, 236);
+    animation: raiseUp 200ms ease-in;
+    transform: scale(1.2);
+}
+
+@keyframes raiseUp {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+
+}
